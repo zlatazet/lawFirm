@@ -1,0 +1,851 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Header */
+header {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 57px;
+
+    overflow: visible;
+}
+
+.header-sticky {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    background: #FFFFFF;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    margin-top: 41px;
+    margin-left: 37px;
+}
+
+.header__container img {
+    margin-right: 7px;
+}
+
+.logo__text {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 43px;
+
+    color: #000000;
+
+    margin-top: 10px;
+}
+
+.check {
+    width: 30px;
+    height: 2px;
+    background: black;
+    transition: 250ms linear;
+}
+
+.check:not(:last-of-type) {
+    margin-bottom: 6px;
+}
+
+.header__checkbox, .check-wrapper {
+    display: none;
+}
+
+.header__nav {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    margin-top: 67px;
+}
+
+.first-header__list {
+    text-decoration: none;
+    margin-right: 63px;
+
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #2F2E2E;
+}
+
+.header__list {
+    text-decoration: none;
+    margin-right: 63px;
+
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #2F2E2E;
+}
+
+.header__list:last-of-type {
+    margin-bottom: 0;
+}
+
+.title__inner {
+    font-weight: 500;
+    font-size: 51px;
+    line-height: 68px;
+
+    color: #2F2E2E;
+}
+
+/* Main Section */
+.main__section {
+    margin-bottom: 226px;
+}
+
+.main__img {
+    position: absolute;
+    background-repeat: no-repeat;
+
+    max-width: 1150px;
+    right: 0;
+}
+
+.main-section__container {
+    position: relative;
+    max-width: 743px;
+    margin-top: 95px;
+    margin-left: 0;
+
+    background: linear-gradient(91.1deg, rgba(244, 246, 245, 0.9) -7.89%, rgba(255, 255, 255, 0.9) 132.55%);
+}
+
+.main__title {
+    padding-top: 105px;
+    margin-left: 51px;
+}
+
+.main__p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 32px;
+    line-height: 39px;
+    margin-top: 34px;
+    margin-left: 51px;
+    padding-bottom: 158px;
+
+    color: #2F2E2E;
+}
+
+/* Section About Me */
+.section__aboutMe {
+    margin-bottom: 95px;
+}
+
+.image__aboutMe {
+    margin-left: 52px;
+    margin-right: 47px;
+}
+
+.aboutMe__title {
+    max-width: 368px;
+    margin: 0 auto;
+}
+
+.aboutMe__p {
+    max-width: 556px;
+    margin-top: 22px;
+
+    font-weight: 400;
+    font-size: 31px;
+    line-height: 41px;
+
+    color: #2F2E2E;
+}
+
+/* Section Services */
+.services__section {
+    margin-left: 100px;
+}
+
+.container__items {
+    margin-top: 79px;
+}
+
+.items__first-line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 42px;
+}
+
+.items__second-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.items__second-line .item__inner:first-of-type {
+    margin-left: 122px;
+    margin-right: 0;
+}
+
+.items__second-line .item__inner:last-of-type {
+    margin-right: 268px;
+}
+
+.item__inner {
+    margin-right: 106px;
+}
+
+.img__inner-container {
+    display: flex;
+    justify-content: center;
+}
+
+.p__inner-container {
+    display: flex;
+    justify-content: center;
+}
+
+.p__inner {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+
+    color: #2F2E2E;
+}
+
+.p__inner-first {
+    max-width: 231px;
+}
+
+.p__inner-second {
+    max-width: 292px;
+}
+
+.p__inner-third {
+    max-width: 449px;
+}
+
+.p__inner-forth {
+    max-width: 477px;
+}
+
+.p__inner-fifth {
+    max-width: 343px;
+}
+
+/* Reviews Section */
+.reviews__title {
+    display: flex;
+    justify-content: center;
+    margin-top: 68px;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+  
+.mySlides {
+    display: flex;
+    text-align: center;
+}
+  
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+.prev:hover, .next:hover {
+    background-color: white;
+}
+  
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #E9E9E9;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #C4C4C4;
+}
+  
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.reviews__author {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 37px;
+
+    color: #2F2E2E;
+}
+
+.reviews__p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+
+    color: #2F2E2E;
+}
+
+/* Form Section */
+.title__form-container{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 36px;
+    margin-bottom: 35px;
+}
+
+.form__container {
+    padding: 0 148px 0 160px;
+}
+
+input[type=text], input[type=tel], input[type=email], textarea {
+    width: 1120px; 
+    padding: 28px 0 20px 25px; 
+    text-align: left;
+    border: 2px solid #000000;
+    box-sizing: border-box; 
+    margin-bottom: 35px; 
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+    box-sizing: border-box;
+}
+
+input::placeholder, textarea::placeholder {
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 36px;
+
+    color: rgba(47, 46, 46, 0.64);
+}
+
+.submit__input-div {
+    display: flex;
+    justify-content: end;
+}
+
+input[type=submit] {
+    background-color: #2E2F32;
+    color: white;
+    padding: 14px 85px 15px 115px;
+    border: none;
+    cursor: pointer;
+
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 47px;
+
+    color: #FFFFFF;
+}
+
+/* Footer */
+footer {
+    margin-top: 63px;
+    background: #2E2F32;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__p {
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 36px;
+
+    color: #FFFFFF;
+
+    padding: 38px;
+    margin: 0;
+}
+
+.icons__container {
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.footer__icon:not(:last-of-type) {
+    margin-right: 29px;
+}
+
+.footer__icon:last-of-type {
+    margin-right: 52px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1370px) {
+    .items__first-line > .item__inner {
+        margin-right: 50px;
+    }
+
+    .p__inner-third {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .aboutMe__p {
+        font-size: 26px;
+    }
+
+    .items__second-line .item__inner:first-of-type {
+        margin-left: 30px;
+    }
+
+    .items__second-line .item__inner:last-of-type {
+        margin-right: 190px;
+    }
+
+    .form__container {
+        padding: 0 148px 0 33px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .flex {
+        display: block;
+        text-align: center;
+        padding-top: 5px;
+    }
+
+    .aboutMe__p {
+        max-width: inherit;
+    }
+
+    .services__section {
+        margin-left: 50px;
+    }
+
+    .items__second-line .item__inner:last-of-type {
+        margin-left: 75px;
+    margin-right: auto;
+    }
+
+    input[type=text], input[type=tel], input[type=email], textarea {
+        width: 1050px;
+    }
+
+    .form__container {
+        padding: 0 148px 0 50px;
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .main__title {
+        padding-top: 75px;
+        margin-left: 0;
+    }
+
+    .main__p {
+        margin-left: 0;
+        font-size: 30px;
+        padding-bottom: 128px;
+    }
+
+    .items__first-line {
+        display: block;
+    }
+
+    .title__inner {
+        text-align: center;
+    }
+
+    .items__second-line {
+        display: block;
+    }
+
+    .items__first-line > .item__inner {
+        margin-right: 0;
+    }
+
+    .items__second-line .item__inner:first-of-type {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .items__second-line .item__inner:last-of-type {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .items__first-line {
+        margin-bottom: 0;
+    }
+
+    .reviews__title {
+        margin-top: 12px;
+    }
+
+    .title__form-container {
+        margin-top: 0;
+        margin-bottom: 18px;
+    }
+
+    input[type=text], input[type=tel], input[type=email], textarea {
+        width: 960px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .nav__container {
+        display: none;
+    }
+
+    .header__checkbox, .check-wrapper {
+        display: block;
+    }
+
+    .header__menu {
+        position: relative;
+    }
+
+    .check-wrapper {
+        margin-top: 45px;
+        margin-right: 35px;
+        position: relative;
+        z-index: 4;
+    }
+
+    .header__checkbox {
+        position: absolute;
+        z-index: 3;
+        display: block;
+        width: 30px;
+        height: 30px;
+        opacity: 0;
+
+        margin-top: 5px;
+        margin-right: 10px;
+    }
+
+    .header__checkbox:checked ~ .check-wrapper>.check:first-of-type {
+        transform: rotate(45deg) translate(3px, 5px);
+    }
+
+    .header__checkbox:checked ~ .check-wrapper>.check:last-of-type {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+
+    .header__checkbox:checked ~ .check-wrapper>.check:nth-child(2) {
+        opacity: 0;
+    }
+
+    .header__checkbox:checked ~ .header__menu {
+        position: fixed;
+    }
+
+    .header__checkbox:checked ~ nav {
+        z-index: 1;
+        display: block;
+        position: fixed;
+        background: #fff;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        text-align: center;
+    }
+
+    .header__nav {
+        display: inline-block;
+        margin-top: 10%;
+    }
+
+    .first-header__list {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .header__list {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .main__img {
+        max-width: 950px;
+    }
+
+    .main__section {
+        margin-bottom: 115px;
+    }
+
+    .p__inner {
+        font-size: 24px;
+    }
+
+    input[type=text], input[type=tel], input[type=email], textarea {
+        width: 895px;
+    }
+
+    input[type=submit] {
+        padding: 14px 85px 15px 81px;
+    }
+
+    .form__container {
+        padding: 0 116px 0 91px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    input[type=text], input[type=tel], input[type=email], textarea {
+        width: 745px;
+    }
+
+    .form__container {
+        padding: 0 164px 0 91px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    header {
+        margin-bottom: 10px;
+    }
+
+    .main__img {
+        max-width: 844px;
+    }
+
+    .main-section__container {
+        margin: 0 auto;
+    }
+
+    .flex {
+        padding-top: 30px;
+    }
+
+    .section__aboutMe {
+        margin-bottom: 45px;
+    }
+
+    .image__aboutMe {
+        margin: 0;
+    }
+
+    .container__items {
+        margin-top: 40px;
+    }
+
+    input[type=text], input[type=tel], input[type=email], textarea {
+        width: 635px;
+    }
+
+    input::placeholder, textarea::placeholder {
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+    input[type=submit] {
+        padding: 10px 51px 11px 39px;
+        font-size: 23px;
+        line-height: 37px;
+    }
+
+    .footer__p {
+        font-size: 20px;
+    }
+
+    .icons__container {
+        padding-top: 35px;
+        padding-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .image__aboutMe {
+        max-width: 500px;
+    }
+
+    .form__container {
+        padding: 0 0 0 32px;
+    }
+
+    input[type=submit] {
+        margin-right: 51px;
+    }
+
+    footer {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    input[type=text], input[type=tel], input[type=email], textarea {
+        width: 516px;
+        margin-bottom: 28px;
+        padding: 19px 0 13px 16px;
+    }
+
+    input[type=submit] {
+        padding: 10px 32px 11px 36px;
+        font-size: 17px;
+        line-height: 29px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .header__container {
+        margin-top: 11px;
+        margin-left: 7px;
+    }
+
+    .logo__text {
+        font-size: 21px;
+    }
+
+    .header__container img {
+        width: 50px;
+    }
+
+    .title__inner {
+        font-size: 38px;
+        line-height: 31px;
+    }
+
+    .image__aboutMe {
+        max-width: 416px;
+    }
+
+    .aboutMe__p {
+        font-size: 23px;
+        line-height: 31px;
+    }
+
+    .form__container {
+        padding: 0 0 0 10px;
+    }
+
+    input[type=text], input[type=tel], input[type=email], textarea {
+        width: 480px;
+        margin-bottom: 26px;
+        padding: 14px 0 11px 12px;
+    }
+}
+
+@media screen and (max-width: 495px) {
+    input[type=text], input[type=tel], input[type=email], textarea {
+        width: 406px;
+        margin-bottom: 18px;
+    }
+
+    input[type=submit] {
+        padding: 5px 24px 6px 31px;
+    }
+}
+
+@media screen and (max-width: 495px) {
+    .image__aboutMe {
+        max-width: 320px;
+    }
+
+    .services__section {
+        margin-left: 0px;
+    }
+
+    .p__inner {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .img__inner {
+        width: 285px;
+    }
+
+    .reviews__author {
+        font-size: 23px;
+        line-height: 28px;
+        margin: 0;
+    }
+
+    .reviews__p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    input[type=text], input[type=tel], input[type=email], textarea {
+        width: 356px;
+    }
+
+    .footer__p {
+        font-size: 18px;
+        line-height: 17px;
+        padding: 26px;
+    }
+
+    .icons__container {
+        padding-bottom: 10px;
+    }
+
+    .footer__icon:not(:last-of-type) {
+        margin-right: 10px;
+    }
+
+    .footer__icon:last-of-type {
+        margin-right: 16px;
+    }
+}
